@@ -118,14 +118,14 @@ class Cb extends \Table\Cell\Checkbox
         return $obj;
     }
 
-    public function getTd($obj)
+    public function getTd($placement)
     {
         $disable = '';
-        if ($obj->id == $this->getConfig()->getUser()->id) {
+        if ($placement->id == $this->getConfig()->getUser()->id) {
             $disable = ' disabled="disabled" ';
         }
 
-        $str = '<input ' . $disable . ' type="checkbox" name="' . $this->getObjectKey(self::CB_NAME) . '[]" value="' . $obj->getId() . '" />';
+        $str = '<input ' . $disable . ' type="checkbox" name="' . $this->getObjectKey(self::CB_NAME) . '[]" value="' . $placement->getId() . '" />';
         return $str;
     }
 

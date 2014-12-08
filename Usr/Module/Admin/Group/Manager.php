@@ -119,13 +119,13 @@ class String extends \Table\Cell\String
         return $obj;
     }
 
-    public function getTd($obj)
+    public function getTd($placement)
     {
-        $str = parent::getTd($obj);
-        if ($obj->id > 1) {
+        $str = parent::getTd($placement);
+        if ($placement->id > 1) {
             return $str;
         }
-        return htmlentities($this->getPropertyValue($obj));
+        return htmlentities($this->getPropertyValue($placement));
     }
 
 }
