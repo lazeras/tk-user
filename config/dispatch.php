@@ -5,8 +5,7 @@ $dispatcher = $config->getDispatcherStatic();
 
 // USER
 // Public Pages
-$dispatcher->add('/login.html', '\Usr\Module\Login');
-$dispatcher->add('/logout.html', '\Usr\Module\Logout');
+
 $dispatcher->add('/register.html', '\Usr\Module\Register');
 $dispatcher->add('/recover.html', '\Usr\Module\Recover');
 $dispatcher->add('/createAdmin.html', '\Usr\Module\CreateAdmin');

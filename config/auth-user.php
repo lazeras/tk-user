@@ -26,8 +26,6 @@ $config['system.user.enablePwdRecovery'] = true;
 // fields. Useful to add external registration and recovery information and links.
 $config['system.user.loginHtml'] = '';
 
-
-
 // This is the default login url
 $config['system.auth.loginUrl'] = '/login.html';
 // This is the default logout url
@@ -35,7 +33,6 @@ $config['system.auth.logoutUrl'] = '/logout.html';
 
 // Set a user class here for the login system EG: \Usr\Db\User
 $config['system.auth.userClass'] = '';
-
 
 /*
  * LDAP Config Options
@@ -57,8 +54,4 @@ $config['system.user.loginForm.enableAdapters'] = false;
 $config['system.user.loginForm.enableRegister'] = true;
 $config['system.user.loginForm.enablePwdRecovery'] = true;
 
-// Set these when using admin only authentication
-// This is a simple one user auth used for small sites.
-//$config['system.auth.username'] = '';
-//$config['system.auth.password'] = '';
 

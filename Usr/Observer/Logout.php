@@ -20,7 +20,7 @@ class Logout extends \Tk\Object implements \Tk\Observer
      */
     public function update($obs)
     {
-        /* @var $user \Usr\Db\User */
+        // @var $user \Usr\Db\User
         $user = $this->getConfig()->getUser();
         if ($this->getRequest()->cookieExists('tk_auth_cookie')) {
             $this->getRequest()->deleteCookie('tk_auth_cookie');
